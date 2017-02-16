@@ -1,0 +1,49 @@
+/*		     Made By:
+	
+	Gabriela Medeiros Florencio Leal
+		   gmlf@cin.ufpe.br
+    
+        Mateus Valgueiro Teixeira
+		   mvt@cin.ufpe.br
+
+			Date: 2017
+
+Cores Usadas:
+Laranja hover nav: #e64a19
+Preto not so preto: #212121;
+
+*/
+
+/* ====================================Navbar Changes=============================*/
+#logo{
+	display: block;
+	background-size: contain;
+	font-size: 30px;
+	color:white;
+}
+
+.navbar-transparente{
+	padding: 20px 0px;
+	background: black;
+	border: none;
+	
+	
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #ffd699;
+}
+
+/*Configuração de Hover e active*/
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover{
+    color: white;
+    background: #bf360c;
+}
+/*======================================================================================*/
+
+.img-principal{
+	padding-top: 70px;
+}
