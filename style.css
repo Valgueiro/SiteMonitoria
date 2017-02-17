@@ -52,6 +52,7 @@ body {
     /*font-family: 'Roboto', sans-serif;*/
     font-family: 'Open Sans', Monaco, "Lucida Console", monospace;
     color: white;
+   
 	
 }
 
@@ -62,17 +63,21 @@ body {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	background-color: rgba(0, 0, 0, 0.6);
-	min-height: 200%;
-	padding-top:40em;
-	position:relative;
+ 	width: 100%;
+	display: table;
+
 }
 
 .tituloSobre{
-	padding: 10px 10px;
+	text-align: center;
 	border-bottom: 0px solid white;
 	text-shadow:4px 4px 5px #212b3d;
+	vertical-align: center;
+	font-size: 35px;
 }
+
 .textoSobre{
+	box-sizing: border-box;
 	text-align: center;	
 	margin-bottom: 100px;
 	font-size: 16px;
@@ -174,7 +179,6 @@ body {
 	margin-left: 0px;
 	
 }
-
 
 
 /*=======================================================================*/

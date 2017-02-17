@@ -15,21 +15,37 @@
                 <caminho>files/mt3.pdf</caminho>
             </arquivo>
         </semestre>
+        <semestre id = "2016.2">
+            <arquivo>
+                <nome>MT1</nome>
+                <caminho>files/mt1.pdf</caminho>
+            </arquivo>
+            <arquivo>
+                <nome>MT2</nome>
+                <caminho>files/mt2.pdf</caminho>
+            </arquivo>
+            <arquivo>
+                <nome>MT3</nome>
+                <caminho>files/mt3.pdf</caminho>
+            </arquivo>
+        </semestre>
     </mini-provas>
+    
     <provas>
         <semestre id = "2016.1">
             <arquivo>
-                <nome>P1</nome>
+                <nome>EE1</nome>
                 <caminho>files/P1.pdf</caminho>
             </arquivo>
             <arquivo>
-                <nome>p2</nome>
+                <nome>EE2</nome>
                 <caminho>files/p2.pdf</caminho>
             </arquivo>
         </semestre>
     </provas>
     <slides>
-    </slides>
+        
+    </slides>s
     <listas>
     </listas>
 </raiz>

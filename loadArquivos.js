@@ -4,7 +4,7 @@ xhttp.onreadystatechange = function() {
         processXml(this);
     }
 };
-xhttp.open("GET", "https://raw.githubusercontent.com/luucasv/teste/master/dado.xml", true);
+xhttp.open("GET", "https://raw.githubusercontent.com/Valgueiro/SiteMonitoria/master/arquivos.xml", true);
 xhttp.send();
 
 function processXml(req){
@@ -19,7 +19,7 @@ function processXml(req){
     txt += '<div class="panel panel-transparent">';
 	$xml.find("mini-provas").find("semestre").each(function(){
 	    var name =  $(this).attr('id'), id = name.replace(".", "-");
-	    console.log(name + " " + id);
+	    
     	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#sub" href="#' + id + '">';
 		txt += '<h6 class="panel-title">' + name + '</h6> </div>';
 
@@ -28,7 +28,7 @@ function processXml(req){
    		txt += '<ul class="list-group">';
 		// console.log($(this).attr('id'));
 		$(this).find('arquivo').each(function(){
-			txt += '<li class="list-group-item justify-content-between">' + $(this).find('nome').text() + '</li>';
+			txt += '<li class="list-group-item justify-content-between" href="'+  $(this).find('caminho').text()  + '>' + $(this).find('nome').text() + '</li>';
 			// console.log($(this).find('nome').text());
 // 			console.log($(this).find('caminho').text());
 		});
