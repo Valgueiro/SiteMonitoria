@@ -19,7 +19,8 @@ Preto not so preto: #212121;
 	background-size: contain;
 	font-size: 30px;
 	color:white;
-	text-shadow:2px 2px 5px #212b3d;
+	text-shadow:3px 3px 5px #212b3d;
+	letter-spacing: 3px;
 }
 
 .navbar-config{
@@ -70,16 +71,17 @@ body {
 
 .tituloSobre{
 	text-align: center;
-	border-bottom: 0px solid white;
+	border: none;
 	text-shadow:4px 4px 5px #212b3d;
 	vertical-align: center;
 	font-size: 35px;
+	letter-spacing: 1px;
 }
 
 .textoSobre{
 	box-sizing: border-box;
 	text-align: center;	
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	font-size: 16px;
 }
 
@@ -89,6 +91,15 @@ body {
 	margin-top: 30px;
 }
 
+.linhaVideo{
+	padding-top: 0px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.video{
+	height: 350px;
+}
+
 /*=======================================================================*/
 
 /*============================Parte dos Monitores========================*/
@@ -96,10 +107,11 @@ body {
 .linhaMonitores{
 	border:none;
 	background-color: rgba(0,0,0,0.6);
+	padding-bottom: 20px;
 }
 .tituloMonitores{
+	text-shadow:4px 4px 5px #212b3d;
 	border-bottom: 2px solid white;
-	border-radius: 5px;
 	width: 100%;
 	margin-bottom:20px;
 	
@@ -124,20 +136,33 @@ body {
 	padding: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	position:relative;
+	bottom:0px;
+	width:100%;
 }
-.linhaArquivos{
-	margin-top: 90px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	padding-bottom: 0px;
-	height: 900px;
-	background-color: rgba(0, 0, 0, 0.6);
-	background-attachment: fixed;
+.linhaFinalArquivos{
+	background-color: rgba(0, 0, 0, 0);
+	position:absolute;
 }
-
 /*=======================================================================*/
 
 /*===========================Arquivos====================================*/
+.linhaArquivos{
+ 	width: 100%;
+ 	height: 100%;
+	position: fixed;
+	margin-top: 90px;
+	margin-bottom: 90px;
+	padding-bottom: 20px;
+
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.6); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+	
+}
+
 .opcaoArquivos{
 	cursor: pointer;
 }
@@ -145,6 +170,13 @@ body {
 #accordion{
 	padding-top: 150px;
 	background-color: rgba(0,0,0,0);
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
 }
 
 .panel-title{
@@ -158,6 +190,12 @@ body {
 .panel-transparent .panel-heading{ 
     background: rgba(122, 130, 136, 0.2)!important;
 }
+
+.panel-transparent .panel-heading:hover,
+.panel-transparent .panel-heading:active{ 
+    background: rgba(122, 130, 136, 0.5)!important;
+}
+
 
 .panel-transparent .panel-body{
     background: rgba(46, 51, 56, 0.2)!important;
@@ -179,7 +217,8 @@ body {
     cursor: pointer;
 }
 
-#sub{
+#subMini-Provas,
+#subProvas{
 	width: 90%;
 	float: left;
 	padding: none;

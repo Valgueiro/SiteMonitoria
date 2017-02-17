@@ -9,7 +9,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Monitoria - Introdução a Programação</title>
 
-        <link rel="icon" href="img/iconCin.ico">
+        <link rel="icon" href="img/favicon.ico">
 
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -54,30 +54,34 @@
         <div class="linhaSobre">
             <div class="container" >
                 <div class = "col-md-12">
-                   <center><h2 class="row page-header">Sobre a Materia</h2> </center>
-                    <p class = "row textoSobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus quis nibh at leo vulputate vestibulum. Donec dapibus augue mi, et 
-                    consequat lacus imperdiet eu. Pellentesque habitant morbi tristique senectus et
-                    netus et malesuada.
+                   <center><h2 class="row page-header tituloSobre">Sobre o site</h2> </center>
+                    <p class = "row textoSobre">
+                        Aqui a gente pretende deixar os materiais da cadeira mais acessíveis e tal tal tal
                     </p>
+                    
+                   
                 </div>
             </div>
         </div>
+        <div class="linhaVideo">
+            <div class="container">
+                <center><iframe width="600" height="355" class = "img-responsive video" src="https://www.youtube.com/embed/nKIu9yen5nc" frameborder="0" allowfullscreen></iframe></center>
+            </div>
+        </div>
         
-       
         
         <div class="linhaMonitores">
             <div class="container">
                 <div class="row">
-                    <center><h2 class="page-header container">Monitores</h2></center>
+                    <center><h2 class="page-header container tituloMonitores">Monitores</h2></center>
                 </div>
                 
                 <!-- Fotos da primeira Linha -->
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <center> <img src="img/mvt.jpg" class="img-circle fotoMonitores"
-                        onclick="window.open('https://fb.com/Valgueiro');" data-toggle="tooltip"
-                        data-placement="top" title="Mateus Valgueiro Teixeira">
+                        <center>
+                        <img src="img/mvt.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/vinicius.bezerra.33');"
+                        data-toggle="tooltip" data-placement="top" title="Mateus Valgueiro Teixeira">
                         </img>
                         </center>  
                         
@@ -103,7 +107,7 @@
                         <br>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <center><img src="img/Mateus_Gomes.jpg" class="img-circle fotoMonitores"
+                        <center><img src="img/mgm6.jpg" class="img-circle fotoMonitores"
                         onclick="window.open('https://fb.com/mateus.melo.5');" data-toggle="tooltip"
                         data-placement="top" title="Matheus Gomes de Melo">
                         </img>
@@ -164,7 +168,7 @@
                         <br>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <center><img src="img/Mateus_Gomes.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/vinicius.bezerra.33');"
+                        <center><img src="img/mgm6.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/vinicius.bezerra.33');"
                         data-toggle="tooltip" data-placement="top" title="Vinicius Bezerra Araújo da Silva"></img></center>
                         
                         <Center class="textoMonitores">
@@ -190,7 +194,7 @@
         
         
     
-        <div class="linhaFinal">
+        <div class="linhaFinal" style="absolute">
             <div class="container">
                 <center>
                 Todos os Direitos Reservados &copy;
@@ -210,6 +214,32 @@
             $(function () {
               $('[data-toggle="tooltip"]').tooltip()
             })
+            
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+
         </script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="bootstrap/js/bootstrap.min.js"></script>

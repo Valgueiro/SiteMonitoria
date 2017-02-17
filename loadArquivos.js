@@ -14,7 +14,7 @@ function addAcordion(name, sub){
 	txt += '<div id="' + name + '" class="panel-collapse collapse">';
     txt += '<div class="panel-body">';
     if(sub){
-    	txt += '<div class="panel-group container" id="sub">';
+    	txt += '<div class="panel-group container" id="sub' + name + '">';
    		txt += '<div class="panel panel-transparent">';
     }
     return txt;
@@ -26,9 +26,9 @@ function processXml(req){
 	txt += '<div class="panel panel-transparent">';
 	txt += addAcordion("Mini-Provas", true);
 	$xml.find("mini-provas").find("semestre").each(function(){
-	    var name =  $(this).attr('id'), id = name.replace(".", "-");
+	    var name =  $(this).attr('id'), id = "mini-provas" +  name.replace(".", "-");
 	    
-    	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#sub" href="#' + id + '">';
+    	txt += '<div class="panel-heading opcaoArquivos " data-toggle="collapse" data-parent="#subMini-Provas" href="#' + id + '">';
 		txt += '<h6 class="panel-title">' + name + '</h6> </div>';
 
 		txt += '<div id="' + id + '" class="panel-collapse collapse">';
@@ -44,9 +44,9 @@ function processXml(req){
 
 	txt += addAcordion("Provas", true);
 	$xml.find("provas").find("semestre").each(function(){
-		var name =  $(this).attr('id'), id = name.replace(".", "-");
+		var name =  $(this).attr('id'), id = "provas" + name.replace(".", "-");
 	    
-    	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#sub" href="#' + id + '">';
+    	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#subProvas" href="#' + id + '">';
 		txt += '<h6 class="panel-title">' + name + '</h6> </div>';
 
 		txt += '<div id="' + id + '" class="panel-collapse collapse">';
@@ -59,12 +59,10 @@ function processXml(req){
 		txt += '</ul></div></div>'
 	});
 	txt += '</div></div></div></div>';
+
+// 	txt += addAcordion("Slides", false);
 // 	$xml.find("slides").find("semestre").each(function(){
-// 		console.log($(this).attr('id'));
-// 		$(this).find('arquivo').each(function(){
-// 			console.log($(this).find('nome').text());
-// 			console.log($(this).find('caminho').text());
-// 		});
+		
 // 	});
 	txt += '</ div>';
 	console.log(txt);

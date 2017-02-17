@@ -54,7 +54,46 @@
         </semestre>
     </provas>
     <slides>
-        
+        <arquivo>
+            <nome>Apresentação da Monitoria</nome>
+            <caminho>files/P1.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Condicionais[Flowgorithm]</nome>
+            <caminho>files/p2.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Laços[Flowgorithm]</nome>
+            <caminho>files/P1.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Sub-Programas[Flowgorithm]</nome>
+            <caminho>files/P1.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Condicionais e Laços em C</nome>
+            <caminho>files/P1.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Funções</nome>
+            <caminho>files/P1.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Array e Matrizes</nome>
+            <caminho>files/P1.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Strings</nome>
+            <caminho>files/p2.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Ponteiros</nome>
+            <caminho>files/p2.pdf</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Arquivos</nome>
+            <caminho>files/p2.pdf</caminho>
+        </arquivo>
     </slides>
     <listas>
     </listas>
