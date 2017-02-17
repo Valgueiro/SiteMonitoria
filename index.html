@@ -7,12 +7,17 @@
         <!-- Tag para design Responsivo -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Home</title>
+        <title>Monitoria - Introdução a Programação</title>
 
         <link rel="icon" href="img/iconCin.ico">
 
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
         <link href="style.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,60 +27,192 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-
-
+    
     <body>  
-        <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente" >
+        <nav class="navbar navbar-fixed-top navbar-inverse navbar-config" >
             <div class="container">
-
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao" >
+                    <button type="button" class="navbar-toggle collapsed" 
+                    data-toggle="collapse" data-target="#barra-navegacao" >
                         <span class="sr-only">Alternar Menu</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href = "index.html" class="navbar-brand" id="logo">Monitoria IP</a>
+                    <a href = "index.html" class="navbar-brand" id="logo"> Monitoria IP </a>
                 </div>
             
                 <div class= "collapse navbar-collapse" id="barra-navegacao">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"> <a href="#" >Home</a> </li>
-                        <li> <a href="notas.html">Notas</a> </li>
+                        <li> <a href="https://docs.google.com/spreadsheets/d/12zaq3LsBcZh9qMyFbs6gdU2_Y9qPn53Csj3eYwTA6fE/"  target="_">Notas</a> </li>
                         <li> <a href="arquivos.html">Arquivos</a> </li>
+                        <li> <a href="cronograma.html">Cronograma</a> </li>
                     </ul>
                 </div>
             </div>
 
         </nav>
 
-        <br>
-        <div>
-            <img src="img/Coffe-Code.jpg" class="img-responsive img-principal">
+        <div class="linhaSobre">
+            <div class="container" >
+                <div class = "col-md-12">
+                   <center><h2 class="row page-header tituloSobre">Monitoria de Introdução a Programação</h2> </center>
+                    <p class = "row textoSobre">A monitoria tem como objetivo nao deixar os alunos 
+                    se fuderem durante a cadeira de algoritmos. Nos somos amigos e prezamos pelo bem 
+                    de todos :D;
+                    </p>
+                </div>
+            </div>
         </div>
-
-
-        <div class="blackBack">
-            <div class="container" style="color:white; float:center;">
-                <h3>Monitores</h3> 
-            </div>            
+        
+       
+        
+        <div class="linhaMonitores">
+            <div class="container">
+                <div class="row">
+                    <center><h2 class="tituloMonitores container">Monitores</h2></center>
+                </div>
+                
+                <!-- Fotos da primeira Linha -->
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <center> <img src="img/mvt.jpg" class="img-circle fotoMonitores"
+                        onclick="window.open('https://fb.com/Valgueiro');" data-toggle="tooltip"
+                        data-placement="top" title="Mateus Valgueiro Teixeira">
+                        </img>
+                        </center>  
+                        
+                        <Center class="textoMonitores">
+                            mvt@cin.ufpe.br
+                        <br>
+                            3º periodo
+                        </Center>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <center><img src="img/Lucas_Santana.jpg" class="img-circle fotoMonitores"
+                        onclick="window.open('https://fb.com/lucas.santana11');"
+                        data-toggle="tooltip" data-placement="top" title="Lucas Vinicius da Costa Santana">
+                        </img>
+                        </center>
+                        
+                        <Center class="textoMonitores">
+                            lvcs@cin.ufpe.br
+                        <br>
+                            5º periodo
+                        </Center>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <center><img src="img/Mateus_Gomes.jpg" class="img-circle fotoMonitores"
+                        onclick="window.open('https://fb.com/mateus.melo.5');" data-toggle="tooltip"
+                        data-placement="top" title="Matheus Gomes de Melo">
+                        </img>
+                        </center>
+                        
+                        <Center class="textoMonitores">
+                            mgm6@cin.ufpe.br
+                        <br>
+                            3º periodo
+                        </Center>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <center>
+                        <img src="img/Vinicius.jpg" class="img-circle fotoMonitores"
+                        onclick="window.open('https://fb.com/vinicius.bezerra.33');"
+                        data-toggle="tooltip" data-placement="top" title="Vinicius Bezerra Araújo da Silva">
+                        </img>
+                        </center>
+                        
+                        <Center class="textoMonitores">
+                            vbas@cin.ufpe.br
+                        <br>
+                            6° periodo
+                        </Center>
+                        <br>
+                       
+                    </div>
+                </div>
+                
+                
+                <br>
+                 
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <center>
+                        <img src="img/mvt.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/vinicius.bezerra.33');"
+                        data-toggle="tooltip" data-placement="top" title="Vinicius Bezerra Araújo da Silva">
+                        </img>
+                        </center>  
+                        
+                        <Center class="textoMonitores">
+                            mvt@cin.ufpe.br
+                        <br>
+                            3º periodo
+                        </Center>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <center><img src="img/Lucas_Santana.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/vinicius.bezerra.33');"
+                        data-toggle="tooltip" data-placement="top" title="Vinicius Bezerra Araújo da Silva"></img></center>
+                        
+                        <Center class="textoMonitores">
+                            lvcs@cin.ufpe.br
+                        <br>
+                            5º periodo
+                        </Center>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <center><img src="img/Mateus_Gomes.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/vinicius.bezerra.33');"
+                        data-toggle="tooltip" data-placement="top" title="Vinicius Bezerra Araújo da Silva"></img></center>
+                        
+                        <Center class="textoMonitores">
+                            mgm6@cin.ufpe.br
+                        <br>
+                            3º periodo
+                        </Center>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <center><img src="img/Vinicius.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/vinicius.bezerra.33');"
+                        data-toggle="tooltip" data-placement="top" title="Vinicius Bezerra Araújo da Silva"></img></center>
+                        <Center class="textoMonitores">
+                            vbas@cin.ufpe.br
+                        <br>
+                            6° periodo
+                        </Center>
+                       <br>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        
+    
+        <div class="linhaFinal">
+            <div class="container">
+                <center>
+                Todos os Direitos Reservados &copy;
+                <br>
+                Made By:
+                Gabriela Leal (gmlf), Lucas Santana (lvcs)
+                e Mateus Valgueiro (mvt)
+                </center> 
+            </div>
+               
+        </div>
+        
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
