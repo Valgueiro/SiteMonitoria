@@ -98,14 +98,14 @@ body {
 	background-color: rgba(0,0,0,0.6);
 }
 .tituloMonitores{
-	border-bottom: 2px solid white;
+	border-bottom: 10px solid white;
 	border-radius: 5px;
 	width: 100%;
 	margin-bottom:20px;
 	
 }
 .fotoMonitores{
-	border: 2px solid #212b3d;
+	border: 2px solid white;
 	height: 170px;
 	width: 170px;
 	cursor: pointer;
@@ -168,7 +168,14 @@ body {
 }
 
 .list-group .list-group-item{ 
-    background: rgba(122, 130, 136, 0.2)!important;
+    background: rgba(122, 130, 136, 0.0)!important;
+    cursor: pointer;
+    
+}
+
+.list-group .list-group-item:hover,
+.list-group .list-group-item:focus{ 
+    background: rgba(122, 130, 136, 0.5)!important;
     cursor: pointer;
 }
 
@@ -177,7 +184,6 @@ body {
 	float: left;
 	padding: none;
 	margin-left: 0px;
-	
 }
 
 
