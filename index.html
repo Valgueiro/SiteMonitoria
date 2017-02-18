@@ -25,7 +25,9 @@
         <![endif]-->
     </head>
     
-    <body>  
+    <body>
+        
+        <!-- Barra de Navegação -->
         <nav class="navbar navbar-fixed-top navbar-inverse navbar-config" >
             <div class="container">
                 <div class="navbar-header">
@@ -41,35 +43,86 @@
             
                 <div class= "collapse navbar-collapse" id="barra-navegacao">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"> <a href="#" >Home</a> </li>
-                        <li> <a href="https://docs.google.com/spreadsheets/d/12zaq3LsBcZh9qMyFbs6gdU2_Y9qPn53Csj3eYwTA6fE/"  target="_">Notas</a> </li>
-                        <li> <a href="arquivos.html">Arquivos</a> </li>
-                        <li> <a href="cronograma.html">Cronograma</a> </li>
+                        <li class="active"> <a href="#" ><span class = "glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> </li>
+                        <li> <a href="https://docs.google.com/spreadsheets/d/12zaq3LsBcZh9qMyFbs6gdU2_Y9qPn53Csj3eYwTA6fE/"  target="_"><span class = "glyphicon glyphicon-check" aria-hidden="true"></span> Notas</a> </li>
+                        <li> <a href="arquivos.html"><span class = "glyphicon glyphicon-file" aria-hidden="true"></span> Arquivos</a> </li>
+                        <li> <a href="cronograma.html"><span class = "glyphicon glyphicon-calendar" aria-hidden="true"></span> Cronograma</a> </li>
                     </ul>
-                </div>
+                </div> 
             </div>
 
         </nav>
-
+        
+        <!-- Sobre -->
         <div class="linhaSobre">
             <div class="container" >
-                <div class = "col-md-12">
+                <!--Espaçamento-->
+                <div class="col-md-1"></div> 
+                
+                <div class = "col-md-10" style="float:center;">
                    <center><h2 class="row page-header tituloSobre">Sobre o site</h2> </center>
                     <p class = "row textoSobre">
-                        Aqui a gente pretende deixar os materiais da cadeira mais acessíveis e tal tal tal
+                        Fizemos esse site com o objetivo de facilitar a comunicação entre monitores e 
+                        estudantes  da cadeira de introdução a programação para engenharia da computação.
+                        Aqui, você pode encontrar as redes socias de todos os monitores, além de arquivos,
+                        como slides e provas antigas, e links úteis que os 
+                        ajudarão nos estudos da cadeira. 
                     </p>
                     
                    
                 </div>
             </div>
-        </div>
+        </div> 
+        
+        <!-- Video -->
         <div class="linhaVideo">
             <div class="container">
                 <center><iframe width="600" height="355" class = "img-responsive video" src="https://www.youtube.com/embed/nKIu9yen5nc" frameborder="0" allowfullscreen></iframe></center>
             </div>
         </div>
         
+        <!-- Links Úteis-->
+        <div class ="linhaLinks">
+            <div class="container">
+                <div class="row">
+                    <center><h2 class="page-header container tituloLinks">Links Úteis</h2></center>
+                </div>
+                <div class="row">
+                   <center class ="col-md-4 col-sm-4 .col-lg-2">
+                       <img src="img/th.png" class="img-responsive imgLinks" onclick="window.open('https://www.thehuxley.com/');"
+                        data-toggle="tooltip" data-placement="top" title="The Huxley"></img>
+                   </center> 
+                   <center class ="col-md-4 col-sm-4 .col-lg-2">
+                       <img src="img/stackover.jpg" class="img-responsive imgStack" onclick="window.open('http://stackoverflow.com/');"
+                        data-toggle="tooltip" data-placement="top" title="Stack Overflow"></img>
+                   </center> 
+                   <center class ="col-md-4 col-sm-4 .col-lg-2">
+                       <span class="glyphicon glyphicon-education imgCadeira" onclick="window.open('https://sites.google.com/a/cin.ufpe.br/if669ec/');"
+                        data-toggle="tooltip" data-placement="top" title="Site da Cadeira"></span>
+                   </center> 
+                   
+                </div>
+                <br>
+                <div class="row">
+                    <center class ="col-md-4 col-sm-4 ">
+                       <img src="img/cprog.png" class="img-responsive imgStack" onclick="window.open('http://www.cprogressivo.net/');"
+                        data-toggle="tooltip" data-placement="top" title="C Progressivo"></img>
+                   </center> 
+                    <center class ="col-md-4 col-sm-4 .col-lg-2">
+                       <img src="img/codeblocksicon.png" class="img-responsive imgStack" onclick="window.open('http://www.codeblocks.org/downloads/26');"
+                        data-toggle="tooltip" data-placement="top" title="CodeBlocks"></img>
+                   </center> 
+                   
+                   <center class ="col-md-4 col-sm-4 .col-lg-2">
+                       <img src="img/sublimeicon.png" class="img-responsive imgStack" onclick="window.open('https://www.sublimetext.com/3');"
+                        data-toggle="tooltip" data-placement="top" title="Sublime Text"></img>
+                   </center> 
+                   
+                </div>
+            </div>
+        </div>
         
+        <!-- Monitores -->
         <div class="linhaMonitores">
             <div class="container">
                 <div class="row">
@@ -80,7 +133,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <center>
-                        <img src="img/mvt.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/vinicius.bezerra.33');"
+                        <img src="img/mvt.jpg" class="img-circle fotoMonitores" onclick="window.open('https://fb.com/Valgueiro');"
                         data-toggle="tooltip" data-placement="top" title="Mateus Valgueiro Teixeira">
                         </img>
                         </center>  
@@ -92,7 +145,7 @@
                         </Center>
                         <br>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 ">
                         <center><img src="img/Lucas_Santana.jpg" class="img-circle fotoMonitores"
                         onclick="window.open('https://fb.com/lucas.santana11');"
                         data-toggle="tooltip" data-placement="top" title="Lucas Vinicius da Costa Santana">
@@ -106,7 +159,7 @@
                         </Center>
                         <br>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 ">
                         <center><img src="img/mgm6.jpg" class="img-circle fotoMonitores"
                         onclick="window.open('https://fb.com/mateus.melo.5');" data-toggle="tooltip"
                         data-placement="top" title="Matheus Gomes de Melo">
@@ -193,7 +246,7 @@
         </div>
         
         
-    
+        <!-- Footer -->
         <div class="linhaFinal" style="absolute">
             <div class="container">
                 <center>
@@ -215,32 +268,9 @@
               $('[data-toggle="tooltip"]').tooltip()
             })
             
-            $(document).ready(function(){
-              // Add smooth scrolling to all links
-              $("a").on('click', function(event) {
-            
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                  // Prevent default anchor click behavior
-                  event.preventDefault();
-            
-                  // Store hash
-                  var hash = this.hash;
-            
-                  // Using jQuery's animate() method to add smooth page scroll
-                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-               
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                  });
-                } // End if
-              });
-            });
 
         </script>
+        <script src="autoheight.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>

@@ -7,7 +7,7 @@
         <!-- Tag para design Responsivo -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Calendário</title>
+        <title>Cronograma</title>
 
         <link rel="icon" href="img/favicon.ico">
 
@@ -40,22 +40,68 @@
             
                 <div class= "collapse navbar-collapse" id="barra-navegacao">
                     <ul class="nav navbar-nav navbar-right">
-                        <li> <a href="index.html" >Home</a> </li>
-                        <li> <a href="https://docs.google.com/spreadsheets/d/12zaq3LsBcZh9qMyFbs6gdU2_Y9qPn53Csj3eYwTA6fE/"  target="_">Notas</a> </li>
-                        <li> <a href="arquivos.html">Arquivos</a> </li>
-                        <li class="active"> <a href="#">Cronograma</a> </li>
+                        <li> <a href="index.html" ><span class = "glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> </li>
+                        <li> <a href="https://docs.google.com/spreadsheets/d/12zaq3LsBcZh9qMyFbs6gdU2_Y9qPn53Csj3eYwTA6fE/"  target="_"><span class = "glyphicon glyphicon-check" aria-hidden="true"></span> Notas</a> </li>
+                        <li> <a href="arquivos.html"><span class = "glyphicon glyphicon-file" aria-hidden="true"></span> Arquivos</a> </li>
+                        <li class="active"> <a href="#"><span class = "glyphicon glyphicon-calendar" aria-hidden="true"></span> Cronograma</a> </li>
                     </ul>
                 </div>
             </div>
 
         </nav>
+        
+        
+        <div class="linhaSobre">
+            <div class = "container autoheight">
+                <div class="page-header">
+                    <center><h2>Cronograma</h2></center>
+                </div>
+                <table class="table table-bordered table-condensed">
+                    <thead>
+    
+                      <tr>
+                        <th>Data</th>
+                        <th>Conteúdo</th>
+                        <th>Local</th>
+                        <th>Monitores</th>
+                      </tr>
+    
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>06/03/2017</td>
+                            <td>Apresentação da disciplina</td>
+                        </tr>
+                        <tr>
+                            <td>08/03/2017</td>
+                            <td>Algoritmos e fluxogramas (Apresentando o software FlowGorithm)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-
+           <!-- Footer -->
+        <div class="linhaFinal" style="absolute">
+            <div class="container">
+                <center>
+                Todos os Direitos Reservados &copy;
+                <br>
+                Made By:
+                Gabriela Leal (gmlf), Lucas Santana (lvcs)
+                e Mateus Valgueiro (mvt)
+                </center> 
+            </div>
+               
+        </div>
+        
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="autoheight.js"></script>
     </body>
 </html>

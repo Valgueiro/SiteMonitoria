@@ -7,6 +7,9 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "https://raw.githubusercontent.com/Valgueiro/SiteMonitoria/master/arquivos.xml", true);
 xhttp.send();
 
+var original = $('#accordion').position().top;
+
+
 function addAcordion(name, sub){
 	var txt = "";
 	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#accordion" href="#' + name + '">';
@@ -36,7 +39,7 @@ function processXml(req){
    		txt += '<ul class="list-group">';
 
 		$(this).find('arquivo').each(function(){
-			txt += '<li class="list-group-item justify-content-between">' + $(this).find('nome').text() + '</li>';
+			txt += '<li class="list-group-item justify-content-between href = "' + $(this).find('caminho').text()  + '" target = "_">' + $(this).find('nome').text() + '</li>';
 		});
 		txt += '</ul></div></div>'
 	});
@@ -56,14 +59,20 @@ function processXml(req){
 		$(this).find('arquivo').each(function(){
 			txt += '<li class="list-group-item justify-content-between">' + $(this).find('nome').text() + '</li>';
 		});
-		txt += '</ul></div></div>'
+		txt += '</ul></div></div>';
 	});
 	txt += '</div></div></div></div>';
 
-// 	txt += addAcordion("Slides", false);
-// 	$xml.find("slides").find("semestre").each(function(){
-		
-// 	});
+	txt += addAcordion("Slides", false);
+	$xml.find("slides").each(function(){
+	   txt += '<ul class="list-group">';
+
+		$(this).find('arquivo').each(function(){
+			txt += '<li class="list-group-item justify-content-between">' + $(this).find('nome').text() + '</li>';
+		});
+		txt += '</ul></div></div>'; 
+	});
+	txt += '</div></div>';
 	txt += '</ div>';
 	console.log(txt);
 	document.getElementById("accordion").innerHTML = txt;
