@@ -40,6 +40,7 @@ function processXml(req){
 
 		$(this).find('arquivo').each(function(){
 			var link = $(this).find('caminho').text();
+			console.log(link);
 			txt += '<li class="list-group-item justify-content-between> <a onclick="window.open(\'' + link + '\')">' + $(this).find('nome').text() + '</a></li>';
 		});
 		txt += '</ul></div></div>'
