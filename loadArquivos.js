@@ -40,8 +40,7 @@ function processXml(req){
 
 		$(this).find('arquivo').each(function(){
 			var link = $(this).find('caminho').text();
-			console.log(link);
-			txt += '<li class="list-group-item justify-content-between> <a onclick="window.open(\'' + link + '\')">' + $(this).find('nome').text() + '</a></li>';
+			txt += '<li class="list-group-item justify-content-between" onclick="window.open(\'' + link + '\');">' + $(this).find('nome').text() + '</li>';
 		});
 		txt += '</ul></div></div>'
 	});
@@ -59,7 +58,8 @@ function processXml(req){
    		txt += '<ul class="list-group">';
 
 		$(this).find('arquivo').each(function(){
-			txt += '<li class="list-group-item justify-content-between">' + $(this).find('nome').text() + '</li>';
+			var link = $(this).find('caminho').text();
+			txt += '<li class="list-group-item justify-content-between" onclick="window.open(\'' + link + '\');">' + $(this).find('nome').text() + '</li>';
 		});
 		txt += '</ul></div></div>';
 	});
@@ -70,7 +70,8 @@ function processXml(req){
 	   txt += '<ul class="list-group">';
 
 		$(this).find('arquivo').each(function(){
-			txt += '<li class="list-group-item justify-content-between">' + $(this).find('nome').text() + '</li>';
+			var link = $(this).find('caminho').text();
+			txt += '<li class="list-group-item justify-content-between" onclick="window.open(\'' + link + '\');">' + $(this).find('nome').text() + '</li>';
 		});
 		txt += '</ul></div></div>'; 
 	});

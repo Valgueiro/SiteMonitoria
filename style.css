@@ -111,7 +111,7 @@ body {
 	text-shadow:4px 4px 5px #212b3d;
 	border-bottom: 2px solid white;
 	width: 100%;
-	margin-bottom: 0px; 
+	margin-bottom: 10px; 
 }
 
 .imgTH{
@@ -148,7 +148,7 @@ body {
 	text-shadow:4px 4px 5px #212b3d;
 	border-bottom: 2px solid white;
 	width: 100%;
-	margin-bottom:20px;
+	margin-bottom:40px;
 	margin-top: 20px;
 }
 
@@ -161,6 +161,7 @@ body {
 
 .textoMonitores{
 	padding-top: 10px;
+	padding-bottom: 20px;
 }
 
 /*=======================================================================*/
@@ -263,5 +264,12 @@ body {
 .tabela{
 	margin-top: 300px;
 }
+
+.table>tbody>tr>td,
+.table>thead>tr>th{
+	vertical-align:middle;
+	text-align: center;
+}
+
 
 /*=======================================================================*/
