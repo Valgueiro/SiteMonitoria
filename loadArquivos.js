@@ -39,7 +39,8 @@ function processXml(req){
    		txt += '<ul class="list-group">';
 
 		$(this).find('arquivo').each(function(){
-			txt += '<li class="list-group-item justify-content-between href = "' + $(this).find('caminho').text()  + '" target = "_">' + $(this).find('nome').text() + '</li>';
+			var link = $(this).find('caminho').text();
+			txt += '<li class="list-group-item justify-content-between> <a onclick="window.open(\'' + link + '\')">' + $(this).find('nome').text() + '</a></li>';
 		});
 		txt += '</ul></div></div>'
 	});
