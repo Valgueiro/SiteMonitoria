@@ -4,7 +4,7 @@
         <semestre id = "2016.1">
             <arquivo>
                 <nome>MT1</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mUVpzTU5XbWRvSXc/view?usp=sharing</caminho>
+                <caminho>"https://drive.google.com/file/d/0B3uMfJDFk73mUVpzTU5XbWRvSXc/view?usp=sharing"</caminho>
             </arquivo>
             <arquivo>
                 <nome>MT2</nome>
@@ -64,23 +64,27 @@
         </arquivo>
         <arquivo>
             <nome>Laços[Flowgorithm]</nome>
-            <caminho>files/P1.pdf</caminho>
+            <caminho>#</caminho>
         </arquivo>
         <arquivo>
             <nome>Sub-Programas[Flowgorithm]</nome>
-            <caminho>files/P1.pdf</caminho>
+            <caminho>https://docs.google.com/presentation/d/1dwN8VH29JcSL4craBtcAqgJ4NTosmvn3PKT_TIHw9AM/edit?usp=sharing</caminho>
         </arquivo>
         <arquivo>
-            <nome>Condicionais e Laços em C</nome>
-            <caminho>files/P1.pdf</caminho>
+            <nome>Condicionais</nome>
+            <caminho>https://docs.google.com/presentation/d/1HKdNj6xJL-9hvoR_QhjpH1kkMN6rCt7EcBHQuodu8mw/edit?usp=sharing</caminho>
+        </arquivo>
+        <arquivo>
+            <nome>Laços</nome>
+            <caminho>https://docs.google.com/presentation/d/19jV772IXwRkBnxrR3LMxii0wQmqznSQ_C76lkXCLKHQ/edit?usp=sharing</caminho>
         </arquivo>
         <arquivo>
             <nome>Funções</nome>
-            <caminho>files/P1.pdf</caminho>
+            <caminho>https://drive.google.com/file/d/0B63CS-U6ScN9MHlpV3FTQXFBdjQ/view?usp=sharing</caminho>
         </arquivo>
         <arquivo>
             <nome>Array e Matrizes</nome>
-            <caminho>files/P1.pdf</caminho>
+            <caminho>https://drive.google.com/file/d/0B9aJ1nbx1PhxaERXS21ON2c3b0k/view?usp=sharing</caminho>
         </arquivo>
         <arquivo>
             <nome>Strings</nome>
