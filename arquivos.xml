@@ -6,7 +6,7 @@
                 <nome>MT1</nome>
                 <caminho>"https://drive.google.com/file/d/0B3uMfJDFk73mUVpzTU5XbWRvSXc/view?usp=sharing"</caminho>
             </arquivo>
-            <arquivo>
+            <arquivo>W
                 <nome>MT2</nome>
                 <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mMzYzY3Nxc1E3OTA/view?usp=sharing</caminho>
             </arquivo>
@@ -20,7 +20,7 @@
                 <nome>MT1</nome>
                 <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mRkVIcW1PbFpTR0E/view?usp=sharing</caminho>
             </arquivo>
-            <arquivo>
+            <arquivo>W
                 <nome>MT2</nome>
                 <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mTjRyWEJ0NXJ2Q0U/view?usp=sharing</caminho>
             </arquivo>
@@ -29,6 +29,7 @@
                 <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mZFR2dEpFaXdMejQ/view?usp=sharing</caminho>
             </arquivo>
         </semestre>
+        
     </mini-provas>
     
     <provas>
@@ -88,15 +89,15 @@
         </arquivo>
         <arquivo>
             <nome>Strings</nome>
-            <caminho>files/p2.pdf</caminho>
+            <caminho>https://docs.google.com/presentation/d/1sGFk-0-rosbiwdeMI7AUMfhN8l2maSGQZe3RjUH1gYM/edit?usp=sharing</caminho>
         </arquivo>
         <arquivo>
             <nome>Ponteiros</nome>
-            <caminho>files/p2.pdf</caminho>
+            <caminho>https://docs.google.com/presentation/d/1765sm-RpwYpwqA1HfbcKEeg1pSH7ho4bwEWr42t6HOU/edit?usp=sharing</caminho>
         </arquivo>
         <arquivo>
             <nome>Arquivos</nome>
-            <caminho>files/p2.pdf</caminho>
+            <caminho>https://docs.google.com/presentation/d/1E1943cBDaw-hfHwGNPflJ3KlP3y8Becd_BC0Prc70M0/edit?usp=sharing</caminho>
         </arquivo>
     </slides>
     <listas>
