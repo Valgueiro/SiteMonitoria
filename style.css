@@ -148,6 +148,11 @@ body {
 	padding-bottom: 20px;
 }
 
+.linhaProfessor{
+	border: none;
+	background-color: rgba(0,0,0,0.6);
+}
+
 .tituloMonitores{
 	text-shadow:4px 4px 5px #212b3d;
 	border-bottom: 2px solid white;
