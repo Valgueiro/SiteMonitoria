@@ -7,14 +7,13 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "https://raw.githubusercontent.com/Valgueiro/SiteMonitoria/master/arquivos.xml", true);
 xhttp.send();
 
-var original = $('#accordion').position().top;
 
 
 function addAcordion(name, sub){
 	var txt = "";
-	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#accordion" href="#' + name + '">';
-    txt += '<h4 class="panel-title">'+ name +'</h4> </div>';
-	txt += '<div id="' + name + '" class="panel-collapse collapse">';
+	txt += '<div class="panel-heading opcaoArquivos"  data-toggle="collapse" data-parent="#accordion" href="#' + name + '" > ';
+    txt += '<h4 class="panel-title"><span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span> '+ name  +' </h4></div>';
+    txt += '<div id="' + name + '" class="panel-collapse collapse">';
     txt += '<div class="panel-body">';
     if(sub){
     	txt += '<div class="panel-group container" id="sub' + name + '">';
@@ -32,7 +31,7 @@ function processXml(req){
 	    var name =  $(this).attr('id'), id = "mini-provas" +  name.replace(".", "-");
 	    
     	txt += '<div class="panel-heading opcaoArquivos " data-toggle="collapse" data-parent="#subMini-Provas" href="#' + id + '">';
-		txt += '<h6 class="panel-title">' + name + '</h6> </div>';
+		txt += '<h6 class="panel-title"><span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span> ' + name + '</h6> </div>';
 
 		txt += '<div id="' + id + '" class="panel-collapse collapse">';
    		txt += '<div class="panel-body">';
@@ -51,7 +50,7 @@ function processXml(req){
 		var name =  $(this).attr('id'), id = "provas" + name.replace(".", "-");
 	    
     	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#subProvas" href="#' + id + '">';
-		txt += '<h6 class="panel-title">' + name + '</h6> </div>';
+		txt += '<h6 class="panel-title"><span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span> ' + name + '</h6> </div>';
 
 		txt += '<div id="' + id + '" class="panel-collapse collapse">';
    		txt += '<div class="panel-body">';
@@ -77,6 +76,25 @@ function processXml(req){
 	});
 	txt += '</div></div>';
 	txt += '</ div>';
-	console.log(txt);
 	document.getElementById("accordion").innerHTML = txt;
+	
+	$(".opcaoArquivos").click(function() {
+		if(!$(this).find(".panel-title").find("span").hasClass("glyphicon-chevron-down")){
+			var par = $(this).attr('data-parent');
+			$('div[data-parent="'+par+'"]').find(".panel-title").find("span").removeClass("glyphicon-chevron-down");
+			$('div[data-parent="'+par+'"]').find(".panel-title").find("span").addClass("glyphicon-chevron-right");
+		}
+		
+		$(this).find(".panel-title").find("span").toggleClass("glyphicon-chevron-right");
+		$(this).find(".panel-title").find("span").toggleClass("glyphicon-chevron-down");
+		
+		if($(this).find(".panel-title").find("span").hasClass("glyphicon-chevron-down")){
+			$(this).css('background', 'rgba(122, 130, 136, 0.5)!important');
+			console.log("sério")
+		}
+		else{
+			$(this).css('background', 'rgba(122, 130, 136, 0.2)!important');
+		}
+		
+	});
 }

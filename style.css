@@ -168,10 +168,6 @@ body {
 	cursor: pointer;
 }
 
-.textoMonitores{
-	padding-top: 10px;
-	padding-bottom: 20px;
-}
 
 /*=======================================================================*/
 
@@ -201,6 +197,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.6);
 	float: center;
 	/*min-height: 750px;*/
+	margin-top: 40px;
 }
 
 .opcaoArquivos{
@@ -209,9 +206,10 @@ body {
 
 #accordion{
 	box-sizing: none;
-	padding-top: 150px;
+	margin-top: 90px;
 	background-color: rgba(0,0,0,0);
 	position: relative;
+	padding-top: 90px;
 
 	width: 80%;
 	height: 100%;
@@ -232,10 +230,10 @@ body {
 }
 
 .panel-transparent .panel-heading:hover,
-.panel-transparent .panel-heading:active{ 
+.panel-transparent .panel-heading:focus,
+.panel-transparent .panel-heading:active { 
     background: rgba(122, 130, 136, 0.5)!important;
 }
-
 
 .panel-transparent .panel-body{
     background: rgba(46, 51, 56, 0.2)!important;
@@ -282,3 +280,87 @@ body {
 
 
 /*=======================================================================*/
+
+.photo-grid li {
+	display: table-cell;
+	position: center;
+	padding-right: 50px;
+	
+
+}
+
+.photo-grid figure {
+	height: 170px;
+	width: 170px;
+	overflow: hidden;
+	position: relative;
+	vertical-align: center;
+	margin-bottom: 0px;
+}
+
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.6);
+	color: white;
+	display: table;
+	vertical-align: center;
+	position: center;
+	height:170px;
+	width: 170px;
+	left: 0;
+	opacity: 0;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	
+}
+
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	width: 289px;
+	vertical-align: middle;
+}
+
+.photo-grid li figcaption:hover {
+	opacity: 1;
+}
+
+
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.3em;
+	vertical-align: center;
+	
+	width: 170px;
+	height: 170px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: 100px;
+}
+
+.photo-grid li figcaption:hover p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.6);
+	color: white;
+	display: table;
+	height: 170px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	transition: all 200ms;
+	-webkit-transition-delay: 50ms;
+	-moz-transition-delay: 50ms;
+	transition-delay: 0ms;
+	z-index: 100;
+}
