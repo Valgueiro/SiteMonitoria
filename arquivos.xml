@@ -67,7 +67,7 @@
     </provas>
     
     <material>
-        <assunto id = "Apresentação-da-Monitoria">
+        <assunto id = "Apresentação da Monitoria">
         </assunto>
         <assunto id = "Condicionais[Flowgorithm]">
         </assunto>
@@ -97,14 +97,14 @@
                 <caminho>https://drive.google.com/file/d/0B63CS-U6ScN9MHlpV3FTQXFBdjQ/view?usp=sharing</caminho>
             </arquivo>
         </assunto>
-        <assunto id = "Array-e-Matrizes">
+        <assunto id = "Array e Matrizes">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
                 <caminho>https://drive.google.com/file/d/0B9aJ1nbx1PhxaERXS21ON2c3b0k/view?usp=sharing</caminho>
             </arquivo>
         </assunto>
-        <assunto>
-            <arquivo id = "Strings">
+        <assunto id = "Strings">
+            <arquivo>
                 <nome>Slide da Monitoria</nome>
                 <caminho>https://docs.google.com/presentation/d/1sGFk-0-rosbiwdeMI7AUMfhN8l2maSGQZe3RjUH1gYM/edit?usp=sharing</caminho>
             </arquivo>

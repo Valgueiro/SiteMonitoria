@@ -63,17 +63,24 @@ function processXml(req){
 	});
 	txt += '</div></div></div></div>';
 
-	txt += addAcordion("Slides", false);
-	$xml.find("slides").each(function(){
-	   txt += '<ul class="list-group">';
+	txt += addAcordion("Material", true);
+	$xml.find("material").find("assunto").each(function(){
+		var name =  $(this).attr('id'), id = "material" + name;
+	    
+    	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#subProvas" href="#' + id + '">';
+		txt += '<h6 class="panel-title"><span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span> ' + name + '</h6> </div>';
+
+		txt += '<div id="' + id + '" class="panel-collapse collapse">';
+   		txt += '<div class="panel-body">';
+   		txt += '<ul class="list-group">';
 
 		$(this).find('arquivo').each(function(){
 			var link = $(this).find('caminho').text();
 			txt += '<li class="list-group-item justify-content-between" onclick="window.open(\'' + link + '\');">' + $(this).find('nome').text() + '</li>';
 		});
-		txt += '</ul></div></div>'; 
+		txt += '</ul></div></div>';
 	});
-	txt += '</div></div>';
+	txt += '</div></div></div></div>';
 	txt += '</ div>';
 	document.getElementById("accordion").innerHTML = txt;
 	
