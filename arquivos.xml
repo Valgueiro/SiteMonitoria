@@ -66,52 +66,62 @@
         </semestre>
     </provas>
     
-    <slides>
-        <arquivo>
-            <nome>Apresentação da Monitoria</nome>
-            <caminho>#</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Condicionais[Flowgorithm]</nome>
-            <caminho>#</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Laços[Flowgorithm]</nome>
-            <caminho>#</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Sub-Programas[Flowgorithm]</nome>
-            <caminho>https://docs.google.com/presentation/d/1dwN8VH29JcSL4craBtcAqgJ4NTosmvn3PKT_TIHw9AM/edit?usp=sharing</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Condicionais</nome>
-            <caminho>https://docs.google.com/presentation/d/1HKdNj6xJL-9hvoR_QhjpH1kkMN6rCt7EcBHQuodu8mw/edit?usp=sharing</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Laços</nome>
-            <caminho>https://docs.google.com/presentation/d/19jV772IXwRkBnxrR3LMxii0wQmqznSQ_C76lkXCLKHQ/edit?usp=sharing</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Funções</nome>
-            <caminho>https://drive.google.com/file/d/0B63CS-U6ScN9MHlpV3FTQXFBdjQ/view?usp=sharing</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Array e Matrizes</nome>
-            <caminho>https://drive.google.com/file/d/0B9aJ1nbx1PhxaERXS21ON2c3b0k/view?usp=sharing</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Strings</nome>
-            <caminho>https://docs.google.com/presentation/d/1sGFk-0-rosbiwdeMI7AUMfhN8l2maSGQZe3RjUH1gYM/edit?usp=sharing</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Ponteiros</nome>
-            <caminho>https://docs.google.com/presentation/d/1765sm-RpwYpwqA1HfbcKEeg1pSH7ho4bwEWr42t6HOU/edit?usp=sharing</caminho>
-        </arquivo>
-        <arquivo>
-            <nome>Arquivos</nome>
-            <caminho>https://docs.google.com/presentation/d/1E1943cBDaw-hfHwGNPflJ3KlP3y8Becd_BC0Prc70M0/edit?usp=sharing</caminho>
-        </arquivo>
-    </slides>
+    <material>
+        <assunto id = "Apresentação-da-Monitoria">
+        </assunto>
+        <assunto id = "Condicionais[Flowgorithm]">
+        </assunto>
+        <assunto id = "Laços[Flowgorithm]">
+        </assunto>
+        <assunto id = "Sub-Programas[Flowgorithm]">
+            <arquivo>
+                <nome>Slide da Monitoria</nome>
+                <caminho>https://docs.google.com/presentation/d/1dwN8VH29JcSL4craBtcAqgJ4NTosmvn3PKT_TIHw9AM/edit?usp=sharing</caminho>
+            </arquivo>
+        </assunto>
+        <assunto id = "Condicionais">
+            <arquivo>
+                <nome>Slide da Monitoria</nome>
+                <caminho>https://docs.google.com/presentation/d/1HKdNj6xJL-9hvoR_QhjpH1kkMN6rCt7EcBHQuodu8mw/edit?usp=sharing</caminho>
+            </arquivo>
+        </assunto>
+        <assunto id = "Laços">
+            <arquivo>
+                <nome>Slide da Monitoria</nome>
+                <caminho>https://docs.google.com/presentation/d/19jV772IXwRkBnxrR3LMxii0wQmqznSQ_C76lkXCLKHQ/edit?usp=sharing</caminho>
+            </arquivo>
+        </assunto>
+        <assunto id = "Funções">
+            <arquivo>
+                <nome>Slide da Monitoria</nome>
+                <caminho>https://drive.google.com/file/d/0B63CS-U6ScN9MHlpV3FTQXFBdjQ/view?usp=sharing</caminho>
+            </arquivo>
+        </assunto>
+        <assunto id = "Array-e-Matrizes">
+            <arquivo>
+                <nome>Slide da Monitoria</nome>
+                <caminho>https://drive.google.com/file/d/0B9aJ1nbx1PhxaERXS21ON2c3b0k/view?usp=sharing</caminho>
+            </arquivo>
+        </assunto>
+        <assunto>
+            <arquivo id = "Strings">
+                <nome>Slide da Monitoria</nome>
+                <caminho>https://docs.google.com/presentation/d/1sGFk-0-rosbiwdeMI7AUMfhN8l2maSGQZe3RjUH1gYM/edit?usp=sharing</caminho>
+            </arquivo>
+        </assunto>
+        <assunto id = "Ponteiros">
+            <arquivo>
+                <nome>Slide da Monitoria</nome>
+                <caminho>https://docs.google.com/presentation/d/1765sm-RpwYpwqA1HfbcKEeg1pSH7ho4bwEWr42t6HOU/edit?usp=sharing</caminho>
+            </arquivo>
+        </assunto>
+        <assunto id = "Arquivos">
+            <arquivo>
+                <nome>Slide da Monitoria</nome>
+                <caminho>https://docs.google.com/presentation/d/1E1943cBDaw-hfHwGNPflJ3KlP3y8Becd_BC0Prc70M0/edit?usp=sharing</caminho>
+            </arquivo>
+        </assunto>
+    </material>
     
     <listas>
     </listas>

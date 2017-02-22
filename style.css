@@ -12,8 +12,17 @@ Cores Usadas:
 Azul hover nav: #212b3d
 Preto not so preto: #212121;
 */
-
-/* ==========================Navbar Changes============================*/
+/*=======================================================================*/
+body {
+	background-size: cover;
+	background-image: url("img/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Open Sans', Monaco, "Lucida Console", monospace;
+    color: white;
+}
+/* =============================Navbar===================================*/
 #logo{
 	display: block;
 	background-size: contain;
@@ -35,28 +44,10 @@ Preto not so preto: #212121;
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover{
-    
     background:#212b3d;
 }
 
-/*=======================================================================*/
-
-body {
-	/*background: url("img/back.jpg") no-repeat center center fixed;*/
-	/*float: center;*/
-	/*position: absolute;*/
-	background-size: cover;
-	background-image: url("img/back.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    /*font-family: 'Roboto', sans-serif;*/
-    font-family: 'Open Sans', Monaco, "Lucida Console", monospace;
-    color: white;
-	
-}
-/*============================== Sobre a Materia=========================*/
-
+/*===================================Sobre===============================*/
 .linhaSobre{
 	margin-top: 90px;
 	margin-bottom: 0px;
@@ -64,11 +55,10 @@ body {
 	background-color: rgba(0, 0, 0, 0.6);
  	width: 100%;
 	display: table;
-
+	text-align: center;
 }
 
 .tituloSobre{
-	text-align: center;
 	border: none;
 	text-shadow:4px 4px 5px #212b3d;
 	vertical-align: center;
@@ -78,21 +68,14 @@ body {
 
 .textoSobre{
 	box-sizing: border-box;
-	text-align: center;	
 	margin-bottom: 50px;
 	font-size: 16px;
 }
 
-
-.img-principal{
-	height:200px;
-	margin-top: 30px;
-}
-
 .linhaVideo{
 	padding-top: 0px;
-	background-color: rgba(0,0,0,0.6);
 	padding-bottom:  30px;
+	background-color: rgba(0,0,0,0.6);
 }
 
 .video{
@@ -105,8 +88,6 @@ body {
 	border:none;
 	background-color: rgba(33, 43, 61,0.8);
 	padding-bottom: 20px;
-
-
 }
 
 .tituloLinks{
@@ -119,8 +100,8 @@ body {
 }
 
 .imgTH{
-	margin-top: 25px;
-	padding-top: 20px;
+	margin-top: 20px;
+	padding-top: 25px;
 	padding-bottom: 0px;
 	cursor: pointer;
 }
@@ -130,18 +111,10 @@ body {
 	width: 70px;
 	margin-top: 20px;
 	cursor: pointer;
-}
-
-.imgCadeira{
-	height: 70px;
-	width: 70px;
-	margin-top: 20px;
-	cursor: pointer;
 	font-size: 70px;
 }
 /*=======================================================================*/
-/*============================Parte dos Monitores========================*/
-
+/*================================ Monitores ============================*/
 .linhaMonitores{
 	border:none;
 	background-color: rgba(0,0,0,0.6);
@@ -168,125 +141,16 @@ body {
 	cursor: pointer;
 }
 
-
-/*=======================================================================*/
-
-/*===============================Rodapé==================================*/
-
-.linhaFinal{
-	background-color: rgba(0, 0, 0, 0.6);	
-	padding: 0px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	position:relative;
-	bottom:0px;
-	width:100%;
-}
-
-.linhaFinalArquivos{
-	position: relative;
-	background-color: rgba(0,0,0,0.6);
-}
-/*=======================================================================*/
-
-/*===========================Arquivos====================================*/
-.linhaArquivos{
- 	width: 100%;
-	position: relative;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
-	float: center;
-	/*min-height: 750px;*/
-	margin-top: 40px;
-}
-
-.opcaoArquivos{
+/*--------------------------- Efeito Monitores -------------------------*/
+.fotoIcon{
 	cursor: pointer;
+	margin:10px;
 }
-
-#accordion{
-	box-sizing: none;
-	margin-top: 90px;
-	background-color: rgba(0,0,0,0);
-	position: relative;
-	padding-top: 90px;
-
-	width: 80%;
-	height: 100%;
-	float: center;
-	
-}
-
-.panel-title{
-	background-color: rgba(0,0,0,0);
-}
-
-.panel-transparent {
-    background: none;
-}
-
-.panel-transparent .panel-heading{ 
-    background: rgba(122, 130, 136, 0.2)!important;
-}
-
-.panel-transparent .panel-heading:hover,
-.panel-transparent .panel-heading:focus,
-.panel-transparent .panel-heading:active { 
-    background: rgba(122, 130, 136, 0.5)!important;
-}
-
-.panel-transparent .panel-body{
-    background: rgba(46, 51, 56, 0.2)!important;
-}
-
-.list-group{
-    background: none;
-}
-
-.list-group .list-group-item{ 
-    background: rgba(122, 130, 136, 0.0)!important;
-    cursor: pointer;
-    
-}
-
-.list-group .list-group-item:hover,
-.list-group .list-group-item:focus{ 
-    background: rgba(122, 130, 136, 0.5)!important;
-    cursor: pointer;
-}
-
-#subMini-Provas,
-#subProvas{
-	width: 90%;
-	float: left;
-	padding: none;
-	margin-left: 0px;
-}
-
-
-/*=======================================================================*/
-
-/*===========================Cronograma==================================*/
-
-.tabela{
-	margin-top: 300px;
-}
-
-.table>tbody>tr>td,
-.table>thead>tr>th{
-	vertical-align:middle;
-	text-align: center;
-}
-
-
-/*=======================================================================*/
 
 .photo-grid li {
 	display: table-cell;
 	position: center;
 	padding-right: 50px;
-	
-
 }
 
 .photo-grid figure {
@@ -311,7 +175,6 @@ body {
 	right: 0;
 	top: 0;
 	z-index: 100;
-	
 }
 
 .photo-grid figcaption p {
@@ -364,3 +227,107 @@ body {
 	transition-delay: 0ms;
 	z-index: 100;
 }
+/*=========================================================================*/
+
+/*=============================== Rodapé ==================================*/
+.linhaFinal{
+	background-color: rgba(0, 0, 0, 0.6);	
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	position:relative;
+	bottom:0px;
+	width:100%;
+}
+
+.linhaFinalArquivos{
+	position: relative;
+	background-color: rgba(0,0,0,0.6);
+}
+/*=======================================================================*/
+
+/*=========================== Arquivos ==================================*/
+.linhaArquivos{
+ 	
+	background-color: rgba(0, 0, 0, 0.6);
+	float: center;
+	position: relative;
+	margin-top: 40px;
+}
+
+.opcaoArquivos{
+	cursor: pointer;
+}
+
+#accordion{
+	box-sizing: none;
+	background-color: rgba(0,0,0,0);
+	position: relative;
+	padding-top: 90px;
+	margin-top: 90px;
+	width: 80%;
+	height: 100%;
+	float: center;
+}
+
+.panel-title{
+	background-color: rgba(0,0,0,0);
+}
+
+.panel-transparent {
+    background: none;
+}
+
+.panel-transparent .panel-heading{ 
+    background: rgba(122, 130, 136, 0.2)!important;
+}
+
+.panel-transparent .panel-heading:hover,
+.panel-transparent .panel-heading:focus,
+.panel-transparent .panel-heading:active { 
+    background: rgba(122, 130, 136, 0.5)!important;
+}
+
+.panel-transparent .panel-body{
+    background: rgba(46, 51, 56, 0.2)!important;
+}
+
+.list-group{
+    background: none;
+}
+
+.list-group .list-group-item{ 
+    background: rgba(122, 130, 136, 0.0)!important;
+    cursor: pointer;
+    
+}
+
+.list-group .list-group-item:hover,
+.list-group .list-group-item:focus{ 
+    background: rgba(122, 130, 136, 0.5)!important;
+    cursor: pointer;
+}
+
+#subMini-Provas,
+#subProvas{
+	width: 90%;
+	float: left;
+	padding: none;
+	margin-left: 0px;
+}
+
+/*=======================================================================*/
+
+/*===========================Cronograma==================================*/
+.tabela{
+	margin-top: 300px;
+}
+
+.table>tbody>tr>td,
+.table>thead>tr>th{
+	vertical-align:middle;
+	text-align: center;
+}
+/*=======================================================================*/
+
+

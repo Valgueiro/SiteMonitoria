@@ -1,3 +1,4 @@
+/*=================================== LOAD FILES ==========================================*/
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -6,8 +7,6 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET", "https://raw.githubusercontent.com/Valgueiro/SiteMonitoria/master/arquivos.xml", true);
 xhttp.send();
-
-
 
 function addAcordion(name, sub){
 	var txt = "";
@@ -98,3 +97,20 @@ function processXml(req){
 		
 	});
 }
+
+/*=========================================================================================*/
+/*================================== Auto Height ==========================================*/
+var setElementHeight = function () {
+    var height = $(window).height() - 40;//38=pixels do "direitos reservados"
+    $('.autoheight').css('min-height', (height));
+};
+    
+$(window).on("resize", function () {
+    setElementHeight();
+}).resize();
+/*=========================================================================================*/
+/*==================================== ToolTip ============================================*/
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+/*=========================================================================================*/
