@@ -65,9 +65,8 @@ function processXml(req){
 
 	txt += addAcordion("Material", true);
 	$xml.find("material").find("assunto").each(function(){
-		var name =  $(this).attr('id'), id = "material" + name;
-	    
-    	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#subProvas" href="#' + id + '">';
+		var name =  $(this).attr('id'), id = "material" + name.replace(/[\s[\135]/g, "-");
+    	txt += '<div class="panel-heading opcaoArquivos" data-toggle="collapse" data-parent="#subMaterial" href="#' + id + '">';
 		txt += '<h6 class="panel-title"><span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span> ' + name + '</h6> </div>';
 
 		txt += '<div id="' + id + '" class="panel-collapse collapse">';
@@ -85,21 +84,29 @@ function processXml(req){
 	document.getElementById("accordion").innerHTML = txt;
 	
 	$(".opcaoArquivos").click(function() {
-		if(!$(this).find(".panel-title").find("span").hasClass("glyphicon-chevron-down")){
-			var par = $(this).attr('data-parent');
+		var $at = $(this);
+		if($at.data('clicked') == true)
+			return;
+		
+		$at.data('clicked', true);
+    	window.setTimeout(function(){
+        	$at.data('clicked', false);
+    	 }, 300);
+		
+		if(!$at.find(".panel-title").find("span").hasClass("glyphicon-chevron-down")){
+			var par = $at.attr('data-parent');
 			$('div[data-parent="'+par+'"]').find(".panel-title").find("span").removeClass("glyphicon-chevron-down");
 			$('div[data-parent="'+par+'"]').find(".panel-title").find("span").addClass("glyphicon-chevron-right");
 		}
 		
-		$(this).find(".panel-title").find("span").toggleClass("glyphicon-chevron-right");
-		$(this).find(".panel-title").find("span").toggleClass("glyphicon-chevron-down");
+		$at.find(".panel-title").find("span").toggleClass("glyphicon-chevron-right");
+		$at.find(".panel-title").find("span").toggleClass("glyphicon-chevron-down");
 		
-		if($(this).find(".panel-title").find("span").hasClass("glyphicon-chevron-down")){
-			$(this).css('background', 'rgba(122, 130, 136, 0.5)!important');
-			console.log("sério")
+		if($at.find(".panel-title").find("span").hasClass("glyphicon-chevron-down")){
+			$at.css('background', 'rgba(122, 130, 136, 0.5)!important');
 		}
 		else{
-			$(this).css('background', 'rgba(122, 130, 136, 0.2)!important');
+			$at.css('background', 'rgba(122, 130, 136, 0.2)!important');
 		}
 		
 	});
