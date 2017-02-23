@@ -66,18 +66,6 @@
         </semestre>
     </provas>
     <material>
-        <assunto id = "Apresentação da Monitoria">
-        </assunto>
-        <assunto id = "Condicionais[Flowgorithm]">
-        </assunto>
-        <assunto id = "Laços[Flowgorithm]">
-        </assunto>
-        <assunto id = "Sub-Programas[Flowgorithm]">
-            <arquivo>
-                <nome>Slide da Monitoria</nome>
-                <caminho>https://docs.google.com/presentation/d/1dwN8VH29JcSL4craBtcAqgJ4NTosmvn3PKT_TIHw9AM/export/pptx</caminho>
-            </arquivo>
-        </assunto>
         <assunto id = "Condicionais">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
