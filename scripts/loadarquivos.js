@@ -91,7 +91,7 @@ function processXml(req){
 		$at.data('clicked', true);
     	window.setTimeout(function(){
         	$at.data('clicked', false);
-    	 }, 300);
+    	 }, 350);
 		
 		if(!$at.find(".panel-title").find("span").hasClass("glyphicon-chevron-down")){
 			var par = $at.attr('data-parent');
