@@ -4,35 +4,35 @@
         <semestre id = "2015.2">
             <arquivo>
                 <nome>MT2</nome>
-                <caminho>https://drive.google.com/file/d/0B63CS-U6ScN9cC1zdnQwOG91TVE</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B63CS-U6ScN9cC1zdnQwOG91TVE</caminho>
             </arquivo>
         </semestre>
         <semestre id = "2016.1">
             <arquivo>
                 <nome>MT1</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mUVpzTU5XbWRvSXc/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B3uMfJDFk73mUVpzTU5XbWRvSXc</caminho>
             </arquivo>
-            <arquivo>W
+            <arquivo>
                 <nome>MT2</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mMzYzY3Nxc1E3OTA/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B3uMfJDFk73mMzYzY3Nxc1E3OTA</caminho>
             </arquivo>
             <arquivo>
                 <nome>MT3</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mcHQ4clA4dTlnV1E/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B3uMfJDFk73mcHQ4clA4dTlnV1E</caminho>
             </arquivo>
         </semestre>
         <semestre id = "2016.2">
             <arquivo>
                 <nome>MT1</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mRkVIcW1PbFpTR0E/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B3uMfJDFk73mRkVIcW1PbFpTR0E</caminho>
             </arquivo>
-            <arquivo>W
+            <arquivo>
                 <nome>MT2</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mTjRyWEJ0NXJ2Q0U/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B3uMfJDFk73mTjRyWEJ0NXJ2Q0U</caminho>
             </arquivo>
             <arquivo>
                 <nome>MT3</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mZFR2dEpFaXdMejQ/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B3uMfJDFk73mZFR2dEpFaXdMejQ</caminho>
             </arquivo>
         </semestre>
     </mini-provas>
@@ -41,84 +41,71 @@
         <semestre id = "2015.2">
             <arquivo>
                 <nome>EE1</nome>
-                <caminho>https://drive.google.com/file/d/0B9aJ1nbx1PhxNnRLTzNyWUxCVE0/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B9aJ1nbx1PhxNnRLTzNyWUxCVE0</caminho>
             </arquivo>
         </semestre>
         <semestre id = "2016.1">
             <arquivo>
                 <nome>EE1</nome>
-                <caminho>https://drive.google.com/file/d/0B63CS-U6ScN9SFo1YWdfRFNoR0U/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B63CS-U6ScN9SFo1YWdfRFNoR0U</caminho>
             </arquivo>
             <arquivo>
                 <nome>EE2</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mM1d6TV9UQkdJbjA/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B3uMfJDFk73mM1d6TV9UQkdJbjA</caminho>
             </arquivo>
         </semestre>
         <semestre id = "2016.2">
             <arquivo>
                 <nome>EE1</nome>
-                <caminho>https://drive.google.com/file/d/0B3uMfJDFk73mOUhrVjZMVVZzNjA/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B3uMfJDFk73mOUhrVjZMVVZzNjA</caminho>
             </arquivo>
             <arquivo>
                 <nome>EE2</nome>
-                <caminho>https://drive.google.com/file/d/0B63CS-U6ScN9WG1NdHlVVWNVaGs/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B63CS-U6ScN9WG1NdHlVVWNVaGs</caminho>
             </arquivo>
         </semestre>
     </provas>
-    
     <material>
-        <assunto id = "Apresentação da Monitoria">
-        </assunto>
-        <assunto id = "Condicionais[Flowgorithm]">
-        </assunto>
-        <assunto id = "Laços[Flowgorithm]">
-        </assunto>
-        <assunto id = "Sub-Programas[Flowgorithm]">
-            <arquivo>
-                <nome>Slide da Monitoria</nome>
-                <caminho>https://docs.google.com/presentation/d/1dwN8VH29JcSL4craBtcAqgJ4NTosmvn3PKT_TIHw9AM/edit?usp=sharing</caminho>
-            </arquivo>
-        </assunto>
         <assunto id = "Condicionais">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
-                <caminho>https://docs.google.com/presentation/d/1HKdNj6xJL-9hvoR_QhjpH1kkMN6rCt7EcBHQuodu8mw/edit?usp=sharing</caminho>
+                <caminho>https://docs.google.com/presentation/d/1HKdNj6xJL-9hvoR_QhjpH1kkMN6rCt7EcBHQuodu8mw/export/pptx</caminho>
             </arquivo>
         </assunto>
         <assunto id = "Laços">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
-                <caminho>https://docs.google.com/presentation/d/19jV772IXwRkBnxrR3LMxii0wQmqznSQ_C76lkXCLKHQ/edit?usp=sharing</caminho>
+                <caminho>https://docs.google.com/presentation/d/19jV772IXwRkBnxrR3LMxii0wQmqznSQ_C76lkXCLKHQ/export/pptx</caminho>
             </arquivo>
         </assunto>
         <assunto id = "Funções">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
-                <caminho>https://drive.google.com/file/d/0B63CS-U6ScN9MHlpV3FTQXFBdjQ/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B63CS-U6ScN9MHlpV3FTQXFBdjQ</caminho>
             </arquivo>
         </assunto>
         <assunto id = "Array e Matrizes">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
-                <caminho>https://drive.google.com/file/d/0B9aJ1nbx1PhxaERXS21ON2c3b0k/view?usp=sharing</caminho>
+                <caminho>https://docs.google.com/uc?export=download&amp;id=0B9aJ1nbx1PhxaERXS21ON2c3b0k</caminho>
             </arquivo>
         </assunto>
         <assunto id = "Strings">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
-                <caminho>https://docs.google.com/presentation/d/1sGFk-0-rosbiwdeMI7AUMfhN8l2maSGQZe3RjUH1gYM/edit?usp=sharing</caminho>
+                <caminho>https://docs.google.com/presentation/d/1sGFk-0-rosbiwdeMI7AUMfhN8l2maSGQZe3RjUH1gYM/export/pptx</caminho>
             </arquivo>
         </assunto>
         <assunto id = "Ponteiros">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
-                <caminho>https://docs.google.com/presentation/d/1765sm-RpwYpwqA1HfbcKEeg1pSH7ho4bwEWr42t6HOU/edit?usp=sharing</caminho>
+                <caminho>https://docs.google.com/presentation/d/1765sm-RpwYpwqA1HfbcKEeg1pSH7ho4bwEWr42t6HOU/export/pptx</caminho>
             </arquivo>
         </assunto>
         <assunto id = "Arquivos">
             <arquivo>
                 <nome>Slide da Monitoria</nome>
-                <caminho>https://docs.google.com/presentation/d/1E1943cBDaw-hfHwGNPflJ3KlP3y8Becd_BC0Prc70M0/edit?usp=sharing</caminho>
+                <caminho>https://docs.google.com/presentation/d/1E1943cBDaw-hfHwGNPflJ3KlP3y8Becd_BC0Prc70M0/export/pptx</caminho>
             </arquivo>
         </assunto>
     </material>
