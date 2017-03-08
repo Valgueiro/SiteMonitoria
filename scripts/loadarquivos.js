@@ -91,7 +91,7 @@ function processXml(req){
 		$at.data('clicked', true);
     	window.setTimeout(function(){
         	$at.data('clicked', false);
-    	 }, 300);
+    	 }, 350);
 		
 		if(!$at.find(".panel-title").find("span").hasClass("glyphicon-chevron-down")){
 			var par = $at.attr('data-parent');
@@ -112,19 +112,5 @@ function processXml(req){
 	});
 }
 
-/*=========================================================================================*/
-/*================================== Auto Height ==========================================*/
-var setElementHeight = function () {
-    var height = $(window).height() - 40;//38=pixels do "direitos reservados"
-    $('.autoheight').css('min-height', (height));
-};
-    
-$(window).on("resize", function () {
-    setElementHeight();
-}).resize();
-/*=========================================================================================*/
-/*==================================== ToolTip ============================================*/
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
+
 /*=========================================================================================*/

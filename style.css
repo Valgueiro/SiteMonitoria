@@ -36,8 +36,12 @@ body {
 	padding: 20px 0px;
 	background: rgba(0,0,0,0.6);
 	border: none;
-	
 }
+
+.collapse{
+	color: white;
+}
+
 
 /*Configuração de Hover e active*/
 .navbar-inverse .navbar-nav>li>a:hover,
@@ -45,6 +49,7 @@ body {
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover{
     background:#212b3d;
+	color:white;
 }
 
 /*===================================Sobre===============================*/
