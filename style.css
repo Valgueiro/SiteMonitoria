@@ -172,7 +172,7 @@ body {
 	color: white;
 	display: table;
 	vertical-align: center;
-	position: center;
+	float: center;
 	height:170px;
 	width: 170px;
 	left: 0;
