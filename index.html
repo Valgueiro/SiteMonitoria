@@ -12,6 +12,13 @@
         <title>Monitoria - Introdução a Programação</title>
 
         <link rel="icon" href="img/favicon.ico">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,68 +34,66 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        
     </head>
 
-    <body  style="cursor: default;" onselectstart="return false">
+    <body style="cursor: default;" onselectstart="return false">
         <!-- Barra de Navegação -->
-        <nav class="navbar navbar-fixed-top navbar-inverse navbar-config" >
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target="#barra-navegacao" >
-                        <span class="sr-only">Alternar Menu</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href = "index.html" class="navbar-brand" id="logo"> Monitoria IP </a>
-                </div>
+        <div class="navbar-fixed">
+            <nav class="navbar navbar-inverse navbar-config" >
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#barra-navegacao" >
+                                <span class="sr-only">Alternar Menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href = "index.html" class="brand-logo" id="logo"> Monitoria IP </a>
+                        </div>
 
-                <div class= "collapse navbar-collapse" id="barra-navegacao">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
-                            <a href="#" >
-                                <span class = "fa fa-home fa-fw" aria-hidden="true"></span> Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://docs.google.com/spreadsheets/d/12zaq3LsBcZh9qMyFbs6gdU2_Y9qPn53Csj3eYwTA6fE/" id="notas" target="_blank">
-                                <span class = "fa fa-check-square fa-fw" aria-hidden="true"></span> Notas
-                            </a>
-                        </li>
-                        <li>
-                            <a href="slide.html#tipos-de-variaveis">
-                                <span class = "fa fa-book fa-fw" aria-hidden="true"></span> Slide
-                            </a>
-                        </li>
-                        <li>
-                            <a href="arquivos.html">
-                                <span class = "fa fa-book fa-fw" aria-hidden="true"></span> Arquivos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="cronograma.html">
-                                <span class = "fa fa-calendar-o fa-fw" aria-hidden="true"></span> Cronograma
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/groups/382027605497879/"  target="_blank">
-                                <span class = "fa fa-facebook-official fa-fw" aria-hidden="true"></span> Grupo
-                            </a>
-                        </li>
-                    </ul>
+                        <div class= "collapse navbar-collapse" id="barra-navegacao">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active">
+                                    <a href="#" >
+                                        <span class = "fa fa-home fa-fw" aria-hidden="true"></span> Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://docs.google.com/spreadsheets/d/12zaq3LsBcZh9qMyFbs6gdU2_Y9qPn53Csj3eYwTA6fE/" id="notas" target="_blank">
+                                        <span class = "fa fa-check-square fa-fw" aria-hidden="true"></span> Notas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="arquivos.html">
+                                        <span class = "fa fa-book fa-fw" aria-hidden="true"></span> Arquivos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sites.google.com/a/cin.ufpe.br/if669ec/cronograma-turma---alexandre-mota">
+                                        <span class = "fa fa-calendar-o fa-fw" aria-hidden="true"></span> Cronograma
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/groups/1514638271929505/"  target="_blank">
+                                        <span class = "fa fa-facebook-official fa-fw" aria-hidden="true"></span> Grupo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </div>
         <!-- Sobre -->
         <div class="linhaSobre">
             <div class="container" >
                 <!--Espaçamento-->
-                <div class="col-md-1"></div>
-
-                <div class = "col-md-10" style="float:center;">
-                   <center><h2 class="row page-header tituloSobre">Sobre o site</h2> </center>
+                <div class = "col-md-10 col-md-offset-1" style="float:center;">
+                    <h2 class="row page-header tituloSobre" >Sobre o site</h2>
                     <p class = "row textoSobre">
                         Fizemos esse site com o objetivo de facilitar a comunicação entre monitores e
                         estudantes  da cadeira de introdução a programação para engenharia da computação.
@@ -103,46 +108,44 @@
         <!-- Video -->
         <div class="linhaVideo">
             <div class="container">
-                <center>
-                    <iframe width="600" height="355" class = "img-responsive video" src="https://www.youtube.com/embed/nKIu9yen5nc"
-                    frameborder="0" allowfullscreen></iframe>
-                </center>
+                <iframe width="600" height="355" class = "video" src="https://www.youtube.com/embed/nKIu9yen5nc"
+                frameborder="0" allowfullscreen ></iframe>
             </div>
         </div>
 
         <!-- Links Úteis-->
-        <div style="background:rgba(0,0,0,0.6)" class ="">
-            <div class="container linhaLinks">
-                    <center><h2 class="page-header container tituloLinks">Links Úteis</h2></center>
-                <div class="row">
-                   <center class ="col-md-4 col-sm-4 .col-lg-2">
+        <div style="background:rgba(0,0,0,0.6)">
+            <div class="container linhaLinks" >
+                    <h2 class="page-header container tituloLinks" style="text-align: center;">Links Úteis</h2>
+                <div class="row" style="text-align: center;">
+                   <div class ="col-md-4 col-sm-4 .col-lg-2">
                        <img src="img/th.png" class="img-responsive imgTH " onclick="window.open('https://www.thehuxley.com/');"
                         data-toggle="tooltip" data-placement="top" title="The Huxley">
-                   </center>
-                   <center class ="col-md-4 col-sm-4 .col-lg-2">
+                   </div>
+                   <div class ="col-md-4 col-sm-4 .col-lg-2">
                        <img src="img/stackover.jpg" class="img-responsive imgStack" onclick="window.open('http://stackoverflow.com/');"
                         data-toggle="tooltip" data-placement="top" title="Stack Overflow">
-                   </center>
-                   <center class ="col-md-4 col-sm-4 .col-lg-2">
+                   </div>
+                   <div class ="col-md-4 col-sm-4 .col-lg-2">
                        <span class="glyphicon glyphicon-education imgStack" onclick="window.open('https://sites.google.com/a/cin.ufpe.br/if669ec/');"
                         data-toggle="tooltip" data-placement="top" title="Site da Cadeira"></span>
-                   </center>
+                   </div>
 
                 </div>
             <br>
-                <div class="row">
-                    <center class ="col-md-4 col-sm-4 ">
+                <div class="row" style="text-align: center;">
+                    <div class ="col-md-4 col-sm-4 ">
                        <img src="img/cprog.png" class="img-responsive imgStack" onclick="window.open('http://www.cprogressivo.net/');"
                         data-toggle="tooltip" data-placement="top" title="C Progressivo">
-                   </center>
-                    <center class ="col-md-4 col-sm-4 .col-lg-2">
+                   </div>
+                    <div class ="col-md-4 col-sm-4 .col-lg-2">
                        <img src="img/codeblocksicon.png" class="img-responsive imgStack" onclick="window.open('http://www.codeblocks.org/downloads/26');"
                         data-toggle="tooltip" data-placement="top" title="CodeBlocks">
-                   </center>
-                   <center class ="col-md-4 col-sm-4 .col-lg-2">
+                   </div>
+                   <div class ="col-md-4 col-sm-4 .col-lg-2">
                        <img src="img/sublimeicon.png" class="img-responsive imgStack" onclick="window.open('https://www.sublimetext.com/3');"
                         data-toggle="tooltip" data-placement="top" title="Sublime Text">
-                   </center>
+                   </div>
                 </div>
             </div>
         </div>
@@ -150,34 +153,33 @@
         <!-- Professor -->
         <div class="linhaProfessor">
             <div class = "container">
-                <div class="row">
-                     <center><h2 class="page-header container tituloMonitores">Professor</h2></center>
+                <div class="row"  style="text-align: center;">
+                     <h2 class="page-header container tituloMonitores">Professor</h2>
                 </div>
                 <div class="row">
                     <ul class="photo-grid">
-                        <center>
-                            <li class="col-md-12 col-sm-12">
-                                <figure>
-                                    <img src="img/acm.jpg" class="img-circle fotoMonitores">
-                                    <figcaption class="img-circle" >
-                                        <p>Alexandre Mota <br>
-
+                        <li class="col-md-12 col-sm-12">
+                            <figure>
+                                <img src="img/acm.jpg" class="img-circle fotoMonitores">
+                                <figcaption class="img-circle" >
+                                    <p>
+                                        Alexandre Mota 
+                                        <br>
                                         <i class="fa fa-external-link-square fa-2x fotoIcon" aria-hidden="true"
                                         onclick="window.open('https://cin.ufpe.br/~acm');">
                                         </i>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                                <br>
-                                <span class="textoMonitores">
-                                    acm@cin.ufpe.br
-                                <br>
-                                    Professor Associado, CIn - UFPE
-                                </span>
+                                    </p>
+                                </figcaption>
+                            </figure>
                             <br>
+                            <span class="textoMonitores">
+                                acm@cin.ufpe.br
                             <br>
-                            </li>
-                        </center>
+                                Professor Associado, CIn - UFPE
+                            </span>
+                        <br>
+                        <br>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -187,13 +189,12 @@
         <div class="linhaMonitores">
             <div class="container">
                 <div class="row">
-                    <center><h2 class="page-header container tituloMonitores">Monitores</h2></center>
+                    <h2 class="page-header container tituloMonitores">Monitores</h2>
                 </div>
 
                 <!-- Fotos da primeira Linha -->
-                <center class="row">
+                <div class="row">
                     <ul class="photo-grid">
-                        <center id="mvt">
                         <li class="col-md-3 col-sm-6">
                             <figure>
                                 <img src="img/mvt.jpg" class="img-circle fotoMonitores">
@@ -214,104 +215,37 @@
                             <span class="textoMonitores">
                                 mvt@cin.ufpe.br
                             <br>
-                                3º periodo
+                                4º periodo
                             </span>
                             <br>
                             <br>
                         </li>
-                        </center>
 
-                        <center id="lvcs">
                         <li class="col-md-3 col-sm-6">
-                            <center>
-                                <figure>
-                                    <img src="img/Lucas_Santana.jpg" class="img-circle fotoMonitores">
-                                    <figcaption class="img-circle">
-                                        <p style="cursor: default;" onselectstart="return false">Chefinho<br>
+                            <figure>
+                                <img src="img/Lucas_Santana.jpg" class="img-circle fotoMonitores">
+                                <figcaption class="img-circle">
+                                    <p style="cursor: default;" onselectstart="return false">Chefinho<br>
 
-                                        <i class="fa fa-facebook-official fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://fb.com/luucasvcs');" >
-                                        </i>
+                                    <i class="fa fa-facebook-official fa-2x fotoIcon" aria-hidden="true"
+                                    onclick="window.open('https://fb.com/luucasvcs');" >
+                                    </i>
 
-                                        <i class="fa fa-external-link-square fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://www.cin.ufpe.br/~lvcs');">
-                                        </i>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                                <br>
-                                <span class="textoMonitores">
-                                    lvcs@cin.ufpe.br
-                                <br>
-                                    5º periodo
-                                </span>
-                            </center>
+                                    <i class="fa fa-external-link-square fa-2x fotoIcon" aria-hidden="true"
+                                    onclick="window.open('https://www.cin.ufpe.br/~lvcs');">
+                                    </i>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <br>
+                            <span class="textoMonitores">
+                                lvcs@cin.ufpe.br
+                            <br>
+                                6º periodo
+                            </span>
                             <br>
                         </li>
-                        </center>
-
-                        <center id="mgm6">
-                        <li class="col-md-3 col-sm-6">
-                            <center>
-                                <figure>
-                                    <img src="img/mgm6.jpg" class="img-circle fotoMonitores">
-                                    <figcaption class="img-circle">
-                                        <p style="cursor: default;" onselectstart="return false">Mateus<br>
-
-                                        <i class="fa fa-facebook-official fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://fb.com/mateus.melo.5');" >
-                                        </i>
-
-                                        <i class="fa fa-external-link-square fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://www.cin.ufpe.br/~mgm6');">
-                                        </i>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                                <br>
-                                <span class="textoMonitores">
-                                    mgm6@cin.ufpe.br
-                                <br>
-                                    3º periodo
-                                </span>
-                            </center>
-                        </li>
-                        </center>
-
-                        <center id="vbas">
-                        <li class="col-md-3 col-sm-6">
-                            <center>
-                                <figure>
-                                    <img src="img/Vinicius.jpg" class="img-circle fotoMonitores" >
-                                    <figcaption class="img-circle">
-                                        <p>Vinicius<br>
-
-                                        <i class="fa fa-facebook-official fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://fb.com/vinicius.bezerra.33');" >
-                                        </i>
-
-                                        <i class="fa fa-external-link-square fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://www.cin.ufpe.br/~vbas');">
-                                        </i>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                                <br>
-                                <span class="textoMonitores">
-                                    vbas@cin.ufpe.br
-                                <br>
-                                    6º periodo
-                                </span>
-                            </center>
-                        </li>
-                        </center>
-                    </ul>
-                </center>
-                <br>
-                <!-- Fotos da segunda Linha -->
-                <center class="row">
-                    <ul class="photo-grid">
-                        <center id="jacs">
+                    
                         <li class="col-md-3 col-sm-6">
                             <figure>
                                 <img src="img/jacs.jpg" class="img-circle fotoMonitores">
@@ -332,16 +266,13 @@
                             <span class="textoMonitores">
                                 jacs@cin.ufpe.br
                             <br>
-                                5º periodo
+                                6º periodo
                             </span>
                             <br>
                             <br>
                         </li>
-                        </center>
-
-                        <center id="hscs">
+                        
                         <li class="col-md-3 col-sm-6">
-                            <center>
                                 <figure>
                                     <img src="img/hscs.jpg" class="img-circle fotoMonitores">
                                     <figcaption class="img-circle">
@@ -363,81 +294,23 @@
                                 <br>
                                     2º periodo
                                 </span>
-                            </center>
                             <br>
                         </li>
-                        </center>
-
-                        <center id="vags">
-                        <li class="col-md-3 col-sm-6">
-                            <center>
-                                <figure>
-                                    <img src="img/vags.jpg" class="img-circle fotoMonitores">
-                                    <figcaption class="img-circle">
-                                        <p style="cursor: default;" onselectstart="return false">Victor<br>
-
-                                        <i class="fa fa-facebook-official fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://www.facebook.com/ovictoraurelio');" >
-                                        </i>
-
-                                        <i class="fa fa-external-link-square fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://www.cin.ufpe.br/~vags');">
-                                        </i>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                                <br>
-                                <span class="textoMonitores">
-                                    vags@cin.ufpe.br
-                                <br>
-                                    3º periodo
-                                </span>
-                            </center>
-                        </li>
-                        </center>
-
-                        <center id="alfb">
-                        <li class="col-md-3 col-sm-6">
-                            <center>
-                                <figure>
-                                    <img src="img/alfb.jpg" class="img-circle fotoMonitores" >
-                                    <figcaption class="img-circle">
-                                        <p>André<br>
-
-                                        <i class="fa fa-facebook-official fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://www.facebook.com/OElementoSurpresa');" >
-                                        </i>
-
-                                        <i class="fa fa-external-link-square fa-2x fotoIcon" aria-hidden="true"
-                                        onclick="window.open('https://www.cin.ufpe.br/~alfb');">
-                                        </i>
-                                        </p>
-                                    </figcaption>
-                                </figure>
-                                <br>
-                                <span class="textoMonitores">
-                                    alfb@cin.ufpe.br
-                                <br>
-                                    2º periodo
-                                </span>
-                            </center>
-                        </li>
-                        </center>
                     </ul>
-                </center>
+                </div>
+                <br>
+                <!-- Fotos da segunda Linha -->
             </div>
         </div>
 
         <!-- Footer -->
-        <div class="linhaFinal" style="absolute">
-            <div class="container">
-                <center>
+        <div class="linhaFinal">
+            <div class="container" style="text-align: center;">
                 Todos os Direitos Reservados &copy;
                 <br>
                 Made By:
                 Gabriela Leal (gmlf), Lucas Santana (lvcs)
                 e Mateus Valgueiro (mvt)
-                </center>
             </div>
         </div>
 

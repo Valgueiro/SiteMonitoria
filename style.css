@@ -13,19 +13,21 @@ Azul hover nav: #212b3d
 Preto not so preto: #212121;
 */
 /*=======================================================================*/
+html {
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+
 body {
 	background-size: cover;
 	background-image: url("img/back.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Open Sans', Monaco, "Lucida Console", monospace;
     color: white;
 }
 /* =============================Navbar===================================*/
 #logo{
-	display: block;
-	background-size: contain;
 	font-size: 30px;
 	color:white;
 	text-shadow:3px 3px 5px #212b3d;
@@ -36,7 +38,12 @@ body {
 	padding: 20px 0px;
 	background: rgba(0,0,0,0.6);
 	border: none;
+	height: 90px;
 }
+
+.navbar-config a{
+	font-size: 14px;
+}	
 
 .collapse{
 	color: white;
@@ -54,13 +61,13 @@ body {
 
 /*===================================Sobre===============================*/
 .linhaSobre{
-	margin-top: 90px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	background-color: rgba(0, 0, 0, 0.6);
  	width: 100%;
 	display: table;
 	text-align: center;
+	margin-top: 27px;
 }
 
 .tituloSobre{
@@ -81,10 +88,13 @@ body {
 	padding-top: 0px;
 	padding-bottom:  30px;
 	background-color: rgba(0,0,0,0.6);
+	text-align: center;
 }
 
 .video{
+	position: relative;
 	height: 350px;
+	
 }
 
 /*=======================================================================*/
@@ -96,8 +106,6 @@ body {
 }
 
 .tituloLinks{
-	text-shadow:4px 4px 5px black;
-	border-bottom: 2px solid black;
 	width: 100%;
 	height: 40px;
 	margin-bottom: 10px;
@@ -124,11 +132,20 @@ body {
 	border:none;
 	background-color: rgba(0,0,0,0.6);
 	padding-bottom: 20px;
+	text-align: center;
 }
 
 .linhaProfessor{
 	border: none;
 	background-color: rgba(0,0,0,0.6);
+}
+
+.linhaMonitores li,
+.linhaMonitores figure,
+.linhaProfessor li,
+.linhaProfessor figure,
+.linhaLinks div{
+	text-align: -webkit-center;
 }
 
 .tituloMonitores{
@@ -150,12 +167,6 @@ body {
 .fotoIcon{
 	cursor: pointer;
 	margin:10px;
-}
-
-.photo-grid li {
-	display: table-cell;
-	position: center;
-	padding-right: 50px;
 }
 
 .photo-grid figure {
