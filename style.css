@@ -163,6 +163,11 @@ body {
 	cursor: pointer;
 }
 
+.textoMonitores{
+	float: left;
+	margin-left: 35px;
+}
+
 /*--------------------------- Efeito Monitores -------------------------*/
 .fotoIcon{
 	cursor: pointer;
